@@ -99,12 +99,31 @@
    letter-spacing: 0.02em;
    padding: 24px 0;
    display: block;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+  
+   .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;;
+    }
+
+    .current{
+      position: relative;
+      color: #404BBF;
+    }
 
    .nav-link:hover,
    .nav-link:focus {
    color: #404BBF;
    }
+  
+  
 
 
     .address {
@@ -131,6 +150,7 @@
 
    /* section-hero*/
     .hero {
+      max-width: 1440px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
       background-repeat: no-repeat;
       background-position: center;
@@ -138,6 +158,7 @@
     background-color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: auto;
     }
        
     .hero-wrap{
@@ -192,6 +213,18 @@
     gap: 24px;
    }
     
+   .icon-block{
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+   }
+
     .adventages-item{
     max-width: 264px;
     width: calc((100% - 24 * 3) / 4);
@@ -272,10 +305,18 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
    }
    
    .icon-list-team{
-   
+    
+   }
+   .icon-social-team{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 24px;
    }
 
    .social-list{
@@ -290,6 +331,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    .icon-link-team:hover,
@@ -350,7 +392,9 @@
 
    /* footer */
 
-
+    .footer-wrap{
+     display: flex;
+    }
    .footer {
    padding-top: 100px;
    padding-bottom: 100px;
@@ -386,6 +430,51 @@
     width: 264px;
    }
 
+   .social-link-media {
+      width: 208px;
+        height: 80px;
+
+   }
+
+   .title-footer{
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #fff;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+   }
+  
+   .item-footer {
+      width: 208px;
+        height: 40px;
+        gap: 16px;
+        display: flex;
+   }
+  
+   .footer-list {
+    width: 40px;
+      height: 40px;
+   }
+
+  
+   .icon-link-footer {
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #4D5AE5;
+        border-radius: 50%;
+        fill: white;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+  
+   .social-list-footer {
+
+   }
   
 
           
