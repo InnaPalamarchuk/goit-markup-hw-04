@@ -1,3 +1,9 @@
+  :root{
+    --icon-back-color: #f4f4f;
+  }
+  
+  
+  
   body {
    font-family: "Roboto", sans-serif;
    color: #434455;
@@ -195,7 +201,7 @@
     cursor: pointer;
     padding: 16px 32px; 
     min-width: 169px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .button-hero:hover,
@@ -323,7 +329,7 @@
    }
 
    .social-list{
-    fill: #4d5ae5;
+    fill: var(--icon-back-color);
    }
 
    .icon-link-team{
@@ -334,7 +340,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    .icon-link-team:hover,
@@ -374,15 +380,16 @@
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);
-      box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
    
    .portfolio-sguare{
     position: relative;
       overflow: hidden;
+      transform: translateY(0);
    }
 
-   .portfolio-item:hover .overlay{
+   .portfolio-item:hover .text-desc-portfilio{
     transform: translateY(0);
    }
 
@@ -468,10 +475,14 @@
     width: 264px;
    }
   
+  .logo-box{
+    align-items: baseline;
+    margin-right: 120px;
+  }
 
    .social-link-media {
       width: 208px;
-        height: 80px;
+      height: 80px;
    }
 
    .title-footer{
@@ -517,7 +528,7 @@
    }
 
 
-     .icon-link-footer:hover
+     .icon-link-footer:hover,
      .icon-link-footer:focus
      {
      background-color: #31D0AA;
