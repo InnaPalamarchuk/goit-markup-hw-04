@@ -1,5 +1,5 @@
   :root{
-    --icon-back-color: #f4f4f;
+    --icon-back-color: #f4f4fd;
   }
   
   
@@ -229,7 +229,7 @@
     border-radius: 4px;
     width: 264px;
     height: 112px;
-    background: #f4f4fd;
+    background: var(--icon-back-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -261,7 +261,7 @@
    /* section-team*/
    .section-team{
     text-align: center;
-    background-color: #F4F4FD;
+    background-color: var(--icon-back-color);
     padding-top: 120px;
     padding-bottom: 120px;
    }
@@ -384,13 +384,13 @@
     }
    
    .portfolio-sguare{
-    position: relative;
+      position: relative;
       overflow: hidden;
-      transform: translateY(0);
+      transform: translateY(0%);
    }
 
    .portfolio-item:hover .text-desc-portfilio{
-    transform: translateY(0);
+    transform: translateY(0%);
    }
 
 
@@ -403,7 +403,7 @@
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.02em;
-      color:#f4f4fd;
+      color:var(--icon-back-color);
       padding: 40px 32px;
       background-color: #4d5ae5;
       transform: translateY(100%);
@@ -463,7 +463,7 @@
    }
 
    .logo-second{
-   color: #f4f4fd;
+   color: var(--icon-back-color);
    }
 
     .text-footer{
@@ -471,18 +471,18 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
+    color: var(--icon-back-color);
     width: 264px;
    }
   
   .logo-box{
-    align-items: baseline;
     margin-right: 120px;
   }
 
    .social-link-media {
       width: 208px;
       height: 80px;
+      align-items: baseline;
    }
 
    .title-footer{
@@ -524,7 +524,7 @@
    }
   
    .social-list-footer{
-    fill:#f4f4fd;
+    fill:var(--icon-back-color);
    }
 
 
